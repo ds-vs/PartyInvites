@@ -21,7 +21,12 @@ namespace PartyInvites.Controllers
         public ViewResult RsvpForm(GuestResponse response)
         {
             Repository.AddResponse(response);
-            return View();
+            return View("Thanks", response);
+        }
+
+        public ViewResult ListResponses()
+        {
+            return View(Repository.Responses.Where(x => x.WillAttend == true));
         }
     }
 }
