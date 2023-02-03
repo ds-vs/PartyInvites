@@ -15,6 +15,7 @@
 <body>
     <!-- Форма для гостя -->
     <form asp-action="RsvpForm" method="post">
+        <div asp-validation-summary="All"></div>
         <div>
             <label asp-for="Name">Твоё имя:</label>
             <input asp-for="Name" />
