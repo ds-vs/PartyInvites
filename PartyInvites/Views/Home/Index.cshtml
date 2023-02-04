@@ -9,12 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вечеринка!</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
 </head>
 <body>
-    <div>
-        <p>У нас будет крутая вечеринка!</p>
-        <p>(Тут будет картинка...)</p>
+    <div class="text-center">
+        <h1>У нас будет крутая вечеринка!</h1>
+        <h2>И ТЫ приглашён!</h2>
+        <a class="btn btn-primary" asp-action="RsvpForm">Записаться сейчас!</a>
     </div>
-    <a asp-action="RsvpForm">Записаться сейчас!</a>
 </body>
 </html>
